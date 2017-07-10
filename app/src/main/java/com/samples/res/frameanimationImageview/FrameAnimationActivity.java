@@ -18,9 +18,7 @@ public class FrameAnimationActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_frame_animation);
-
         imageView = (ImageView)findViewById(R.id.image);
-
     }
 
     @Override
