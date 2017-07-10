@@ -11,7 +11,7 @@ public class FrameAnimationActivity extends AppCompatActivity
         implements View.OnClickListener{
 
     private final static int DURATION = 300;
-    private AnimationDrawable animation;
+    private AnimationDrawable animation = null;
     private ImageView imageView;
 
     @Override
@@ -35,7 +35,7 @@ public class FrameAnimationActivity extends AppCompatActivity
         }
     }
 
-    private void stop() {
+    private void start() {
         BitmapDrawable frame1 =
                 (BitmapDrawable)getResources().getDrawable(R.drawable.android1);
         BitmapDrawable frame2 =
@@ -52,7 +52,7 @@ public class FrameAnimationActivity extends AppCompatActivity
         animation.start();
     }
 
-    private void start() {
+    private void stop() {
         animation.stop();
         animation.setVisible(false,false);
     }
